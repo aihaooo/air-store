@@ -370,3 +370,15 @@ hr {
     transform: translateY(-4px);
     box-shadow: 0 0 24px var(--accent);
 }
+
+@media (max-width: 768px) {
+    .collections__grid {
+        grid-template-columns: 1fr;
+    }
+
+    .coll-tile--big,
+    .coll-tile--wide {
+        grid-column: span 1;
+        grid-row: span 1;
+    }
+}
