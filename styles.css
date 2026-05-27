@@ -2,8 +2,6 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    scroll-behavior: smooth;
-
 }
 
 :root {
@@ -18,7 +16,6 @@
     --border: #2A2A2E;
 }
 
-
 body {
     background: var(--bg);
 }
@@ -27,6 +24,9 @@ body {
     max-width: 700px;
     margin: 0 auto;
     padding: 0 20px;
+
+
+
 }
 
 .header {
@@ -307,7 +307,9 @@ hr {
 .catalogue__wrapper {
     display: flex;
     margin-top: 10px;
-    overflow-y: scroll;
+    overflow-x: scroll;
+    scrollbar-color: var(--accent) var(--surface);
+    scrollbar-width: thin;
     gap: 20px;
 
 }
