@@ -346,10 +346,13 @@ hr {
 .footer {
     background: var(--surface);
     padding: 10px;
-    display: flex;
-    justify-content: center;
-    text-align: center;
     margin-top: 50px;
+}
+
+.footer-wrapper {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
 }
 
 
@@ -357,10 +360,12 @@ hr {
     color: var(--text-muted);
     font-family: JetBrains Mono;
     font-weight: 200;
+    text-transform: uppercase;
 }
 
 .footer__air-store {
     font-weight: 500;
+    text-transform: none;
 }
 
 .reveal {
@@ -404,6 +409,10 @@ hr {
     background: var(--accent-dark);
 
     box-shadow: 0 0 20px rgba(196, 240, 66, 0.4);
+}
+
+.collections {
+    margin-top: 20px;
 }
 
 .collections__grid {
